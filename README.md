@@ -1,2 +1,20 @@
 # SMART-DAM-CONTROL-SYSTEM
 C program to operate the dam settings
+c program:
+#include <stdio.h>
+int main() {
+    int waterLevel;
+    int motorState = 0;  
+    printf("Water level of Dam");
+    printf("\n Enter current water level (0-100): ");
+    scanf("%d", &waterLevel);
+
+    if (waterLevel >= 100) {
+        printf("Motor is ON (Water is being released)\n");
+        motorState = 1;
+    } else if (waterLevel <100) {
+        printf("Motor is OFF (Water is stopped)\n");
+        motorState = 0;
+    }
+    return 0;
+}
