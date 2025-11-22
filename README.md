@@ -9,7 +9,7 @@ int main() {
     printf("\n Enter current water level (0-100): ");
     scanf("%d", &waterLevel);
 
-    if (waterLevel >= 100) {
+    if (waterLevel = 100) {
         printf("Motor is ON (Water is being released)\n");
         motorState = 1;
     } else if (waterLevel <100) {
